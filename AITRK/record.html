@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AITRK - Record</title>
+    
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.10.0/js/bootstrap-datepicker.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.10.0/css/bootstrap-datepicker.min.css ">
+<link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="d-flex">
+      <div class="logo">
+        <h5>AITRK</h5>
+      </div>
+      <nav>
+        <ul class="d-flex mb-0">
+          <li class="mx-2">
+            <a href="main.html"
+              ><span class="px-2"
+                ><img
+                  src="assets/material-symbols_co-present-outline-sharp.svg"
+                  alt="" /></span
+              >Main Stream</a
+            >
+          </li>
+          <li class="mx-2 active">
+            <a href="record.html"
+              ><span class="px-2"><img src="assets/record2.svg" alt="" /></span
+              >Record</a
+            >
+          </li>
+          <li class="mx-2">
+            <a href="#"
+              ><span class="px-2"
+                ><img
+                  src="assets/material-symbols_co-present-outline-sharp.svg"
+                  alt="" /></span
+              >Authority</a
+            >
+          </li>
+          <li class="mx-2">
+            <a href="ai.html"
+              ><span class="px-2"><img src="assets/Ai.png" alt="" /></span
+              >AI/Event</a
+            >
+          </li>
+          <li class="mx-2">
+            <a href=""
+              ><span class="px-2"><img src="assets/system.png" alt="" /></span
+              >System</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div class="icons d-flex">
+        <span class="mx-2 btn"><img src="assets/calendar.svg" alt="" /></span>
+        <span class="mx-2 btn"
+          ><img src="assets/notification.svg" alt=""
+        /></span>
+        <span class="mx-2 btn"><img src="assets/profile.png" alt="" /></span>
+      </div>
+    </header>
+    <div class="row mt-5">
+      <div class="col-md-3">
+        <!-- <img class="w-100" src="assets/Month.png" alt="" /> -->
+        <div id="datepicker"></div>
+        <img
+          class="float-end"
+          src="assets/Screenshot 2023-07-04 at 7.39 1.svg"
+          alt=""
+        />
+      </div>
+      <div class="col-md-6">
+        <img class="w-100" height="600" src="assets/Rectangle 3.png" alt="" />
+        <!-- <img
+          class="w-100"
+          src="assets/Screenshot 2023-07-04 at 6.28 1.svg"
+          alt=""
+        /> -->
+        <div class="d-flex justify-content-between con">
+          <div class="control">
+            <ul class="d-flex gap-1 align-content-center align-items-center m-0 p-0">
+              <li>
+                <button class="btn rounded-circle border-1 border-light"><i class="bx bx-category"></i></button>
+              </li>
+              <li class="d-flex flex-column">
+                <button class="btn p-0 m-0">
+                  <i class="bx bx-exit-fullscreen"></i> <span>Full Screen</span>
+                </button>
+                <button class="btn p-0 m-0">
+                  <i class="bx bxs-color"></i> <span>OSD off</span>
+                </button>
+              </li>
+              <li class="d-flex flex-column">
+                <button class="btn border-1 rounded-1 border-light p-1">
+                  <i class="bx bx-square-rounded"></i>
+                </button>
+                <small class="tex">Display</small>
+              </li>
+              <li class="d-flex flex-column">
+                <button class="btn border-1 rounded-1 border-light p-1">
+                  <i class="bx bx-camera-movie"></i>
+                </button>
+                <small class="tex">Camera</small>
+              </li>
+              <li class="d-flex flex-column">
+                <button class="btn border-1 rounded-1 border-light p-1">
+                  <i class="bx bx-stop"></i>
+                </button>
+                <small class="tex">Stop</small>
+              </li>
+              <li class="d-flex flex-column">
+                <button class="btn border-1 rounded-1 border-light p-1">
+                  <i class="bx bx-rewind"></i>
+                </button>
+                <small class="tex">Rewind</small>
+              </li>
+              <li class="d-flex flex-column">
+                <button class="btn border-1 rounded-1 border-light p-1">
+                  <i class="bx bx-pause"></i>
+                </button>
+                <small class="tex">Pause</small>
+              </li>
+              <li class="d-flex flex-column">
+                <button class="btn border-1 rounded-1 border-light p-1">
+                  <i class="bx bx-left-arrow-alt"></i>
+                </button>
+                <small class="tex">Slow</small>
+              </li>
+              <li class="d-flex flex-column">
+                <button class="btn border-1 rounded-1 border-light p-1">
+                  <i class="bx bx-right-arrow-alt"></i>
+                </button>
+                <small class="tex">Fast</small>
+              </li>
+              <li class="d-flex flex-column">
+                <button class="btn border-1 rounded-1 border-light p-1">
+                    <i class='bx bx-skip-next'></i>
+                </button>
+                <small class="tex">Next </small>
+              </li>
+              <li class="d-flex flex-column">
+                <button class="btn border-1 rounded-1 border-light p-1">
+                    <i class='bx bx-skip-previous'></i>
+                </button>
+                <small class="tex">previous </small>
+              </li>
+             
+            </ul>
+          </div>
+          <div class="control">
+            <ul class="d-flex gap-1 align-content-center align-items-center m-0 p-0">
+                <li class="d-flex flex-column">
+                    <button class="btn border-1 rounded-1 border-light p-1">
+                        <i class='bx bx-compass'></i>
+                    </button>
+                    <small class="tex">Smart</small>
+                  </li>
+                  <li class="d-flex flex-column">
+                    <button class="btn border-1 rounded-1 border-light p-1">
+                        <i class='bx bx-purchase-tag-alt'></i>
+                    </button>
+                    <small class="tex">tag</small>
+                  </li>
+                  <li class="d-flex flex-column">
+                    <button class="btn border-1 rounded-1 border-light p-1">
+                        <i class='bx bx-water' ></i>
+                    </button>
+                    <small class="tex">mark</small>
+                  </li>
+                  <li class="d-flex flex-column">
+                    <button class="btn border-1 rounded-1 border-light p-1">
+                        <i class='bx bx-archive-out'></i>
+                    </button>
+                    <small class="tex">Backup</small>
+                  </li>
+                  <li><button class="btn  border-1 rounded-1 border-light pyd-2" style="color: red">X</button></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 d-flex flex-column">
+       
+        <div class="">
+          <ul class="d-flex gap-3">
+            <li class="d-flex flex-column">
+              <label class="icon-checkbox-btn">
+                <input checked disabled type="checkbox" class="checkbox">
+                <button class="btn border-1 rounded-1 border-light p-1">
+                  <i style="color: green;" class='bx bxs-hand'></i>
+                </button>
+              </label>
+            </li>
+            <li class="d-flex flex-column">
+              
+              <label class="icon-checkbox-btn">
+                <input checked disabled type="checkbox" class="checkbox">
+                <button class="btn border-1 rounded-1 border-light p-1">
+                  <i style="color: red;" class='bx bxs-bell'></i>
+                </button>
+              </label>
+            </li>
+            <li class="d-flex flex-column">
+             
+              <label class="icon-checkbox-btn">
+                <input checked disabled type="checkbox" class="checkbox">
+                <button class="btn border-1 rounded-1 border-light p-1">
+                  <i style="color: aqua;" class='bx bx-brain' ></i>
+                </button>
+              </label>
+            </li>
+            <li class="d-flex flex-column">
+              
+              <label class="icon-checkbox-btn">
+                <input checked disabled type="checkbox" class="checkbox">
+                <button class="btn border-1 rounded-1 border-light p-1">
+                  <i style="color: yellow;" class='bx bx-run' ></i>
+                </button>
+              </label>
+            </li>
+            <li class="d-flex flex-column">
+             
+              <label class="icon-checkbox-btn">
+                <input checked disabled type="checkbox" class="checkbox">
+                <button class="btn border-1 rounded-1 border-light p-1">
+                  <i style="color: blue;" class='bx bxs-copy-alt' ></i>
+                </button>
+              </label>
+            </li>
+            <li class="d-flex flex-column">
+              
+              <label class="icon-checkbox-btn">
+                <input checked disabled type="checkbox" class="checkbox">
+                <button class="btn border-1 rounded-1 border-light p-1">
+                  <i style="color: aqua;" class='bx bxs-time' ></i>
+                </button>
+              </label>
+            </li>
+          </ul>
+        </div>
+        <img src="assets/Group 854.png" alt="" />
+      </div>
+    </div>
+    <!-- <div class="d-flex justify-content-center gap-3 mt-2">
+    <img src="assets/Screenshot 2023-07-04 at 6.28 1.svg" alt="">
+   </div> -->
+    <div class="d-flex justify-content-center gap-3 mt-2">
+      <button class="btn btn-info">
+        <span class="px-2"><img src="assets/run.svg" alt="" /> Running</span>
+        0
+      </button>
+      <button class="btn btn-info">
+        <span class="px-2"><img src="assets/walk.svg" alt="" /> Walking</span>
+        0
+      </button>
+      <button class="btn btn-info">
+        <span class="px-2"><img src="assets/car.svg" alt="" /> Vehicles</span>
+        1
+      </button>
+      <button class="btn btn-info">
+        <span class="px-2"
+          ><img src="assets/knife.svg" alt="" /> Sharp Object</span
+        >
+        0
+      </button>
+      <button class="btn btn-info">
+        <span class="px-2"><img src="assets/smo.png" alt="" /> Smoking</span>
+        0
+      </button>
+    </div>
+    <script>
+
+$('#datepicker').datepicker({
+});
+    </script>
+  </body>
+</html>
